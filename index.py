@@ -14,7 +14,6 @@ GPIO.setwarnings(False)
 TRIG = 23
 ECHO = 24
 
-
 #Trig와 Echo 핀의 출력/입력 설정 
 GPIO.setup(TRIG,GPIO.OUT)
 GPIO.setup(ECHO,GPIO.IN)
@@ -45,6 +44,5 @@ def led():
         time.sleep(0.4)	# 0.4초 간격으로 센서 측정 
         return distance
 
- 
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
